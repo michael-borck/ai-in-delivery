@@ -12,18 +12,18 @@
     ]
   },
   {
-    "listing": "/frameworks.html",
-    "items": [
-      "/handouts/frameworks/frameworks-crisis-response.html",
-      "/handouts/frameworks/frameworks-scale-pivot-kill.html"
-    ]
-  },
-  {
     "listing": "/before.html",
     "items": [
       "/readings/why-ai-delivery-is-different.html",
       "/readings/the-trust-tool.html",
       "/readings/ai-in-five-minutes.html"
+    ]
+  },
+  {
+    "listing": "/frameworks.html",
+    "items": [
+      "/handouts/frameworks/frameworks-crisis-response.html",
+      "/handouts/frameworks/frameworks-scale-pivot-kill.html"
     ]
   }
 ]

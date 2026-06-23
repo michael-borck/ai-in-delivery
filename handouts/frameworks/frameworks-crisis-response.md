@@ -1,4 +1,7 @@
-# Crisis Response Framework
+---
+title: "Crisis response (DDCD)"
+description: "Diagnose → Decide → Communicate → Document — leading through the inevitable AI-project crisis."
+---
 
 ## How to Lead When Things Go Wrong
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>AI in Delivery</title>
+<title>Frameworks – AI in Delivery</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -69,8 +71,66 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-handouts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-handouts'] = new List('listing-handouts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -92,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -104,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">The workshop</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./frameworks.html"> 
+    <a class="nav-link active" href="./frameworks.html" aria-current="page"> 
 <span class="menu-text">Frameworks</span></a>
   </li>  
   <li class="nav-item">
@@ -125,139 +185,98 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-trust-tool-when-to-trust-ai" id="toc-the-trust-tool-when-to-trust-ai" class="nav-link active" data-scroll-target="#the-trust-tool-when-to-trust-ai">The trust tool — when to trust AI</a></li>
+  <li><a href="#ddcd-leading-through-the-inevitable-crisis" id="toc-ddcd-leading-through-the-inevitable-crisis" class="nav-link" data-scroll-target="#ddcd-leading-through-the-inevitable-crisis">DDCD — leading through the inevitable crisis</a></li>
+  <li><a href="#scale-pivot-kill-the-gono-go-call" id="toc-scale-pivot-kill-the-gono-go-call" class="nav-link" data-scroll-target="#scale-pivot-kill-the-gono-go-call">Scale / Pivot / Kill — the go/no-go call</a></li>
+  <li><a href="#take-home-references" id="toc-take-home-references" class="nav-link" data-scroll-target="#take-home-references">Take-home references</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Frameworks</h1>
+<p class="subtitle lead">The tools you’ll keep using on Monday.</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<div class="hero">
-<div class="kicker">
-<p>AI Capability Lifecycle Series · Course 3</p>
-</div>
-<section id="ai-in-delivery" class="level1">
-<h1>AI in Delivery</h1>
-<div class="lead">
-<p>Leading projects that ship — without the predictable failures.</p>
-</div>
-</section>
-</div>
-<p>Welcome. This is your companion site for the one-day <strong>AI in Delivery</strong> masterclass. Everything you need is here: what to read before the day, the workshop you’ll work through, the frameworks you’ll take home, and the RetailFlow team you’ll interview.</p>
-<div class="cards">
-<p><a href="./before.html"></a> <a href="./workshop.html"></a> <a href="./frameworks.html"></a> <a href="./team.html"></a></p>
-</div>
-<section id="the-question-you-came-to-answer" class="level2">
-<h2 class="anchored" data-anchor-id="the-question-you-came-to-answer">The question you came to answer</h2>
-<blockquote class="blockquote">
-<p><em>Why is delivering an AI project different from delivering any other project?</em></p>
-</blockquote>
-<p>That’s the spine of the day. The answer is <strong>five things every project manager assumes — that AI breaks:</strong></p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>A normal project assumes…</th>
-<th>AI breaks it because…</th>
-<th>So you must…</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>“Done” is specifiable</strong></td>
-<td>output is non-deterministic and doesn’t reason</td>
-<td>manage a <em>distribution</em> of behaviour, and define “good enough”</td>
-</tr>
-<tr class="even">
-<td><strong>A working demo ≈ nearly done</strong></td>
-<td>the demo-to-production gap is wide and deceptive</td>
-<td>treat progress as <em>illusory</em> until it’s verified</td>
-</tr>
-<tr class="odd">
-<td><strong>Requirements are the uncertainty</strong></td>
-<td>the <em>data</em> is, and it’s discovered, not specified</td>
-<td>run delivery as <em>organisational discovery</em></td>
-</tr>
-<tr class="even">
-<td><strong>QA is a phase</strong></td>
-<td>verification <em>is</em> the product</td>
-<td>design <em>where human judgement lives</em></td>
-</tr>
-<tr class="odd">
-<td><strong>More throughput = more value</strong></td>
-<td>generic competence is now the baseline</td>
-<td>protect the <em>human variation</em> a rival’s identical model can’t produce</td>
-</tr>
-</tbody>
-</table>
-<p>Every PM tool you know still applies — but each one <strong>bends</strong> under these five forces. The day is about learning the bend.</p>
-</section>
-<section id="what-youll-leave-with" class="level2">
-<h2 class="anchored" data-anchor-id="what-youll-leave-with">What you’ll leave with</h2>
-<p>A <strong>delivery design for a real AI project</strong> — not a theory to apply later:</p>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>These are durable, tool-agnostic frameworks — they work regardless of which AI model you’re using or which one comes out next quarter.</p>
+<section id="the-trust-tool-when-to-trust-ai" class="level2">
+<h2 class="anchored" data-anchor-id="the-trust-tool-when-to-trust-ai">The trust tool — when to trust AI</h2>
+<p>The core lens for the whole day: <strong>Average / Precise × Small / Large.</strong></p>
 <ul>
-<li>Scoped objectives, data requirements, and a defined “good enough”</li>
-<li>A delivery roadmap with milestones and go/no-go gates</li>
-<li>A stakeholder plan and a human-in-the-loop checkpoint design</li>
-<li>A risk register and a pilot-to-production path</li>
+<li>AI excels at <strong>average</strong> answers over <strong>small</strong>, low-stakes work — lean in.</li>
+<li>It gets dangerous on <strong>precise</strong> answers and <strong>large</strong>, high-stakes work — keep a human in the loop.</li>
 </ul>
+<p>This is what makes “where does a human stay in the loop?” an answerable question rather than a vibe. It comes from the free companion book, <a href="https://michael-borck.github.io/conversation-not-delegation/"><em>Conversation, Not Delegation</em></a> — start there to go deeper.</p>
 </section>
-<section id="how-the-day-runs" class="level2">
-<h2 class="anchored" data-anchor-id="how-the-day-runs">How the day runs</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Time</th>
-<th>Block</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>9:00–10:30</td>
-<td><strong>Why AI is different</strong> — the five differences + the trust tool</td>
-</tr>
-<tr class="even">
-<td>11:00–12:30</td>
-<td><strong>Sprint 1 — Scope it against reality</strong></td>
-</tr>
-<tr class="odd">
-<td>1:15–2:30</td>
-<td><strong>Sprint 2 — Stakeholders &amp; human-in-the-loop</strong></td>
-</tr>
-<tr class="even">
-<td>3:00–4:00</td>
-<td><strong>Sprint 3 — Roadmap, risk &amp; the go/no-go call</strong></td>
-</tr>
-<tr class="odd">
-<td>4:00–4:30</td>
-<td><strong>The edge that’s left to humans</strong> + your action plan</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="ddcd-leading-through-the-inevitable-crisis" class="level2">
+<h2 class="anchored" data-anchor-id="ddcd-leading-through-the-inevitable-crisis">DDCD — leading through the inevitable crisis</h2>
+<p>When an AI project hits trouble (and it will), work the problem: <strong>Diagnose → Decide → Communicate → Document.</strong> First ask whether it’s a <em>technical</em>, <em>people</em>, <em>leadership</em>, or <em>ethical</em> crisis — they need different responses.</p>
+</section>
+<section id="scale-pivot-kill-the-gono-go-call" class="level2">
+<h2 class="anchored" data-anchor-id="scale-pivot-kill-the-gono-go-call">Scale / Pivot / Kill — the go/no-go call</h2>
+<p>At each gate, the honest question isn’t “is it perfect?” — it’s whether the evidence justifies continuing. <strong>Killing a project that isn’t working, early, is success, not failure.</strong> The cost of wrongly scaling is far higher than the cost of wrongly killing.</p>
+</section>
+<section id="take-home-references" class="level2">
+<h2 class="anchored" data-anchor-id="take-home-references">Take-home references</h2>
+<div id="listing-handouts" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1782177816190" data-listing-reading-time-sort="4" data-listing-word-count-sort="746">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./handouts/frameworks/frameworks-crisis-response.html" class="no-external">Crisis response (DDCD)</a>
+</h3>
+<div class="delink listing-description"><a href="./handouts/frameworks/frameworks-crisis-response.html" class="no-external">
+<p>Diagnose → Decide → Communicate → Document — leading through the inevitable AI-project crisis.</p>
+</a></div>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Going deeper, on your terms
+<div class="metadata">
+<a href="./handouts/frameworks/frameworks-crisis-response.html" class="no-external">
+</a>
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>This course scaffolds the theory and points you to where to dig. The free companion resource — <a href="https://michael-borck.github.io/conversation-not-delegation/"><em>Conversation, Not Delegation</em></a> — goes deeper on every idea here, including the <strong>trust tool</strong> for deciding when to rely on AI.</p>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1782177816190" data-listing-reading-time-sort="4" data-listing-word-count-sort="675">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./handouts/frameworks/frameworks-scale-pivot-kill.html" class="no-external">Scale / Pivot / Kill</a>
+</h3>
+<div class="delink listing-description"><a href="./handouts/frameworks/frameworks-scale-pivot-kill.html" class="no-external">
+<p>A decision matrix for the go/no-go call at each gate.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./handouts/frameworks/frameworks-scale-pivot-kill.html" class="no-external">
+</a>
 </div>
 </div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
 
 
 </section>

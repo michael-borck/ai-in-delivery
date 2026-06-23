@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>AI in Delivery</title>
+<title>The workshop – AI in Delivery</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -32,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -69,8 +71,94 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-initiatives .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-initiatives'] = new List('listing-initiatives', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-worksheets .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-worksheets'] = new List('listing-worksheets', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -92,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -100,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Before the day</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./workshop.html"> 
+    <a class="nav-link active" href="./workshop.html" aria-current="page"> 
 <span class="menu-text">The workshop</span></a>
   </li>  
   <li class="nav-item">
@@ -125,139 +213,173 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-three-sprints" id="toc-the-three-sprints" class="nav-link active" data-scroll-target="#the-three-sprints">The three sprints</a></li>
+  <li><a href="#how-it-fits-together" id="toc-how-it-fits-together" class="nav-link" data-scroll-target="#how-it-fits-together">How it fits together</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="hero">
-<div class="kicker">
-<p>AI Capability Lifecycle Series · Course 3</p>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The workshop</h1>
+<p class="subtitle lead">Three sprints. One real project. A delivery design you leave with.</p>
 </div>
-<section id="ai-in-delivery" class="level1">
-<h1>AI in Delivery</h1>
-<div class="lead">
-<p>Leading projects that ship — without the predictable failures.</p>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>You are the <strong>delivery lead</strong>. The board has funded one AI initiative at RetailFlow — your job is to ship it without the predictable failures. You’ll carry one project through three sprints, scoping and stress-testing it by <strong>interviewing the RetailFlow team</strong> (<a href="./team.html">meet them here</a>).</p>
+<p>Each group takes a <strong>different</strong> initiative, so no two designs look alike. Pick yours:</p>
+<div id="listing-initiatives" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-2">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1782177816160" data-listing-reading-time-sort="2" data-listing-word-count-sort="332">
+<a href="./activities/initiative-cards/customer-service-chatbot.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Customer-service chatbot
+</h5>
+<div class="card-text listing-description delink">
+<p>Deflect routine queries and cut 26-hour response times — but it’s customer-facing, so confident-wrong answers are a live risk. ($450K, funded.)</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1782177816170" data-listing-reading-time-sort="2" data-listing-word-count-sort="320">
+<a href="./activities/initiative-cards/dynamic-pricing.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Dynamic pricing
+</h5>
+<div class="card-text listing-description delink">
+<p>Automated price optimisation — high value, high stakes, and the data isn’t ready. ($850K, funded.)</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1782177816170" data-listing-reading-time-sort="2" data-listing-word-count-sort="317">
+<a href="./activities/initiative-cards/fraud-detection.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Fraud detection
+</h5>
+<div class="card-text listing-description delink">
+<p>Cut chargebacks without blocking real customers — a buy-vs-build and threshold-tuning problem. ($650K, funded.)</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1782177816170" data-listing-reading-time-sort="2" data-listing-word-count-sort="310">
+<a href="./activities/initiative-cards/inventory-optimisation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Inventory optimisation
+</h5>
+<div class="card-text listing-description delink">
+<p>Forecast and replenish across 50 stores — the broadest scope, tangled in legacy systems. ($1.1M, funded.)</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<section id="the-three-sprints" class="level2">
+<h2 class="anchored" data-anchor-id="the-three-sprints">The three sprints</h2>
+<p>Each sprint hands you one piece of your delivery design. Bring the worksheet (print it, or fill it on your device).</p>
+<div id="listing-worksheets" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1782177816180" data-listing-reading-time-sort="2" data-listing-word-count-sort="324">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./activities/worksheets/sprint-1-scope.html" class="no-external">Sprint 1 — Scope it against reality</a>
+</h3>
+<div class="delink listing-description"><a href="./activities/worksheets/sprint-1-scope.html" class="no-external">
+<p>Scoped objectives, data requirements, and a defined ‘good enough’.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./activities/worksheets/sprint-1-scope.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1782177816180" data-listing-reading-time-sort="2" data-listing-word-count-sort="255">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./activities/worksheets/sprint-2-stakeholders-hitl.html" class="no-external">Sprint 2 — Stakeholders &amp; human-in-the-loop</a>
+</h3>
+<div class="delink listing-description"><a href="./activities/worksheets/sprint-2-stakeholders-hitl.html" class="no-external">
+<p>A stakeholder plan and a human-in-the-loop checkpoint design.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./activities/worksheets/sprint-2-stakeholders-hitl.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1782177816180" data-listing-reading-time-sort="2" data-listing-word-count-sort="250">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./activities/worksheets/sprint-3-roadmap-risk.html" class="no-external">Sprint 3 — Roadmap, risk &amp; the go/no-go</a>
+</h3>
+<div class="delink listing-description"><a href="./activities/worksheets/sprint-3-roadmap-risk.html" class="no-external">
+<p>A delivery roadmap with gates, a risk register, and the Scale/Pivot/Kill call.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./activities/worksheets/sprint-3-roadmap-risk.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-</div>
-<p>Welcome. This is your companion site for the one-day <strong>AI in Delivery</strong> masterclass. Everything you need is here: what to read before the day, the workshop you’ll work through, the frameworks you’ll take home, and the RetailFlow team you’ll interview.</p>
-<div class="cards">
-<p><a href="./before.html"></a> <a href="./workshop.html"></a> <a href="./frameworks.html"></a> <a href="./team.html"></a></p>
-</div>
-<section id="the-question-you-came-to-answer" class="level2">
-<h2 class="anchored" data-anchor-id="the-question-you-came-to-answer">The question you came to answer</h2>
-<blockquote class="blockquote">
-<p><em>Why is delivering an AI project different from delivering any other project?</em></p>
-</blockquote>
-<p>That’s the spine of the day. The answer is <strong>five things every project manager assumes — that AI breaks:</strong></p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>A normal project assumes…</th>
-<th>AI breaks it because…</th>
-<th>So you must…</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>“Done” is specifiable</strong></td>
-<td>output is non-deterministic and doesn’t reason</td>
-<td>manage a <em>distribution</em> of behaviour, and define “good enough”</td>
-</tr>
-<tr class="even">
-<td><strong>A working demo ≈ nearly done</strong></td>
-<td>the demo-to-production gap is wide and deceptive</td>
-<td>treat progress as <em>illusory</em> until it’s verified</td>
-</tr>
-<tr class="odd">
-<td><strong>Requirements are the uncertainty</strong></td>
-<td>the <em>data</em> is, and it’s discovered, not specified</td>
-<td>run delivery as <em>organisational discovery</em></td>
-</tr>
-<tr class="even">
-<td><strong>QA is a phase</strong></td>
-<td>verification <em>is</em> the product</td>
-<td>design <em>where human judgement lives</em></td>
-</tr>
-<tr class="odd">
-<td><strong>More throughput = more value</strong></td>
-<td>generic competence is now the baseline</td>
-<td>protect the <em>human variation</em> a rival’s identical model can’t produce</td>
-</tr>
-</tbody>
-</table>
-<p>Every PM tool you know still applies — but each one <strong>bends</strong> under these five forces. The day is about learning the bend.</p>
-</section>
-<section id="what-youll-leave-with" class="level2">
-<h2 class="anchored" data-anchor-id="what-youll-leave-with">What you’ll leave with</h2>
-<p>A <strong>delivery design for a real AI project</strong> — not a theory to apply later:</p>
-<ul>
-<li>Scoped objectives, data requirements, and a defined “good enough”</li>
-<li>A delivery roadmap with milestones and go/no-go gates</li>
-<li>A stakeholder plan and a human-in-the-loop checkpoint design</li>
-<li>A risk register and a pilot-to-production path</li>
-</ul>
-</section>
-<section id="how-the-day-runs" class="level2">
-<h2 class="anchored" data-anchor-id="how-the-day-runs">How the day runs</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Time</th>
-<th>Block</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>9:00–10:30</td>
-<td><strong>Why AI is different</strong> — the five differences + the trust tool</td>
-</tr>
-<tr class="even">
-<td>11:00–12:30</td>
-<td><strong>Sprint 1 — Scope it against reality</strong></td>
-</tr>
-<tr class="odd">
-<td>1:15–2:30</td>
-<td><strong>Sprint 2 — Stakeholders &amp; human-in-the-loop</strong></td>
-</tr>
-<tr class="even">
-<td>3:00–4:00</td>
-<td><strong>Sprint 3 — Roadmap, risk &amp; the go/no-go call</strong></td>
-</tr>
-<tr class="odd">
-<td>4:00–4:30</td>
-<td><strong>The edge that’s left to humans</strong> + your action plan</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-note callout-titled">
+<section id="how-it-fits-together" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-fits-together">How it fits together</h2>
+<ol type="1">
+<li><strong>Sprint 1 — Scope it against reality.</strong> Interview Priya (data) and Marcus (CIO); reconcile “move fast” with “the data isn’t ready”. → scoped objectives, data needs, a defined <em>good enough</em>.</li>
+<li><strong>Sprint 2 — Stakeholders &amp; human-in-the-loop.</strong> Interview Emma (CEO), Tom (frontline) and David (CFO); decide where a human must stay in charge. → stakeholder plan + checkpoint design.</li>
+<li><strong>Sprint 3 — Roadmap, risk &amp; the go/no-go.</strong> Build the plan, then defend it when the staff push back and a crisis hits. → roadmap with gates, risk register, the Scale/Pivot/Kill call.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Going deeper, on your terms
+Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This course scaffolds the theory and points you to where to dig. The free companion resource — <a href="https://michael-borck.github.io/conversation-not-delegation/"><em>Conversation, Not Delegation</em></a> — goes deeper on every idea here, including the <strong>trust tool</strong> for deciding when to rely on AI.</p>
+<p>The documents you’ll need — board memos, data profiles, vendor proposals, policies — are in RetailFlow’s internal portal. Not everything there is relevant: part of the job is working out what matters.</p>
 </div>
 </div>
+
 
 
 </section>

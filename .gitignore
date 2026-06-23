@@ -21,3 +21,6 @@
 
 # Keep this .gitignore file tracked
 !.gitignore
+
+/.quarto/
+**/*.quarto_ipynb

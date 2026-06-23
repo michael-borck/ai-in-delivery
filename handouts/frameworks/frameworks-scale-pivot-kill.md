@@ -1,4 +1,7 @@
-# Scale, Pivot, or Kill?
+---
+title: "Scale / Pivot / Kill"
+description: "A decision matrix for the go/no-go call at each gate."
+---
 
 ## A Simple Framework for Project Decisions
 

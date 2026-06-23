@@ -1,255 +1,64 @@
 # AI in Delivery: Leading Projects That Ship
 
-> **Revamp in progress (June 2026).** Course 3 of the AI Capability Lifecycle Series, formerly "AI Leadership & Project Management Masterclass". New spine: *why AI delivery is different* (the five differences + the trust tool); the afternoon runs as one continuous project per group, scoped and stress-tested by interviewing the RetailFlow virtual-staff chatbots. See `instructor-materials/facilitator-quick-reference.md` for the current one-day flow, `activities/` for the new initiative cards and sprint worksheets, and `content/slide-deck.md` for the rebuilt deck. The numbered "Masterclass Flow" further down describes the **previous** version and is being superseded.
+Course 3 of the **AI Capability Lifecycle Series** (Curtin exec-ed). A one-day masterclass for project managers and delivery leads on shipping AI projects without the predictable failures. Formerly "AI Leadership & Project Management Masterclass" — fully revamped June 2026.
 
-<!-- BADGES:START -->
-[![exec-ed](https://img.shields.io/badge/-exec--ed-673ab7?style=flat-square)](https://github.com/topics/exec-ed) [![presentation](https://img.shields.io/badge/-presentation-9c27b0?style=flat-square)](https://github.com/topics/presentation) [![artificial-intelligence](https://img.shields.io/badge/-artificial--intelligence-blue?style=flat-square)](https://github.com/topics/artificial-intelligence) [![edtech](https://img.shields.io/badge/-edtech-4caf50?style=flat-square)](https://github.com/topics/edtech) [![html](https://img.shields.io/badge/-html-e34f26?style=flat-square)](https://github.com/topics/html) [![leadership](https://img.shields.io/badge/-leadership-blue?style=flat-square)](https://github.com/topics/leadership) [![project-management](https://img.shields.io/badge/-project--management-blue?style=flat-square)](https://github.com/topics/project-management) [![teaching-materials](https://img.shields.io/badge/-teaching--materials-blue?style=flat-square)](https://github.com/topics/teaching-materials) [![website](https://img.shields.io/badge/-website-2196f3?style=flat-square)](https://github.com/topics/website) [![workshop](https://img.shields.io/badge/-workshop-blue?style=flat-square)](https://github.com/topics/workshop)
-<!-- BADGES:END -->
+This repo holds the teaching materials **and** builds the companion website (Quarto → GitHub Pages).
 
-Comprehensive masterclass materials for teaching AI project leadership and decision-making frameworks.
+## The course in brief
 
-## Quick Start
+**Spine — why AI delivery is different.** Five things every project manager assumes that AI breaks: (1) "done" can't be specified, (2) a working demo is a trap, (3) the data is the uncertainty and it's discovered not specified, (4) verification *is* the product, (5) generic competence is the baseline — the edge is human judgement. Anchored on the **trust tool** (Average/Precise × Small/Large) from *Conversation, Not Delegation*.
 
-### For Instructors Delivering the Course
+**Shape — one project, three sprints.** Participants are the delivery lead for one funded RetailFlow initiative and carry it through: **Sprint 1** scope it against reality · **Sprint 2** stakeholders & human-in-the-loop · **Sprint 3** roadmap, risk & the go/no-go. They scope and stress-test by interviewing the RetailFlow leadership team — live AI chatbots. They leave with a delivery design (scope, roadmap with gates, stakeholder + HITL plan, risk register).
 
-1. **Review the structure:** Read `PROJECT_STRUCTURE.md` to understand file organisation
-2. **Access instructor materials:**
-   - Via website: Visit the companion site and click "🔐 Instructor" (password: `instructor2025`)
-   - Via files: All guides are in `/instructor-materials/` organised by activity
-3. **Prepare materials:**
-   - Print facilitator quick reference (your day-of cheat sheet)
-   - Print student materials (cards, worksheets) from `/activities/materials/`
-   - Review activity facilitation guides
-4. **Build the website:** Run `./scripts/render-all.sh` to generate all materials
-5. **Test locally:** Open `docs/index.html` in a browser
-
-### For Students
-
-- **Website:** Access all materials at the companion website (hosted via GitHub Pages)
-- **Pre-readings:** Available at the website before the course
-- **RetailFlow case study:** Access the company simulation at [retailflow.serveur.au](https://retailflow.serveur.au)
-- **Frameworks:** Download reference materials from Resources menu
-
----
-
-## Project Organisation
+## Repo layout
 
 ```
-/activities/materials/     → Cards and cases used IN activities
-/instructor-materials/     → Facilitation guides by activity (instructor-only)
-  ├── activity-1-pilot-scoping/
-  ├── activity-2-speed-dating/
-  ├── activity-3-crisis-management/
-  └── activity-4-scale-pivot-kill/
-/handouts/                 → Reference materials students take home
-/docs/                     → Website files (auto-generated)
-  ├── index.html           → Main companion site
-  ├── instructor.html      → Password-protected instructor portal
-  └── instructor/          → Rendered instructor materials
-/retailflow-site/          → Company simulation website
-  └── internal.html        → Password-protected pilot data dashboard
-/scripts/                  → Build and utility scripts
+_quarto.yml            Quarto website config (type: website, output-dir: docs)
+brand.scss             Site theme
+index.qmd              Landing page (the five differences + what you leave with)
+before.qmd             Pre-readings landing (lists readings/)
+workshop.qmd           The three sprints + initiative cards (listings)
+frameworks.qmd         Trust tool, DDCD, Scale/Pivot/Kill + take-home handouts
+team.qmd               Links to the RetailFlow staff chatbots
+course-bot.html        Site-wide course-assistant chatbot embed (include-after-body)
+readings/              3 pre-reading pages (.qmd)
+activities/
+  initiative-cards/    The 4 funded initiatives (one per group)
+  worksheets/          The 3 sprint worksheets
+handouts/              Take-home frameworks
+content/slide-deck.md  The slide deck (rendered separately into docs/content)
+instructor-materials/  Facilitator guide, the RetailFlow document answer-key,
+                       crisis walkthroughs, past feedback — NOT published
+scripts/build-site.sh  Build the site (website + deck) into docs/
+docs/                  Generated site (GitHub Pages serves main /docs)
 ```
 
-**See `PROJECT_STRUCTURE.md` for detailed explanation of the organisation logic.**
+## Build & deploy
 
----
-
-## Masterclass Flow
-
-**Duration:** 1 day (8 hours including breaks)
-
-1. **Lecture** (90 min) - Introduction and framework overview
-2. **Morning Tea** (30 min)
-3. **Activity 1: Pilot Scoping** (30 min working + 20 min debrief)
-   - Materials: Constraint cards, case brief
-   - Output: Pilot plan with success criteria
-4. **Activity 2: Speed-Dating** (40 min)
-   - Materials: Stakeholder role cards
-   - Output: Stakeholder mapping and communication strategies
-5. **Lunch** (45 min)
-6. **Activity 3: Crisis Management** (75 min)
-   - Materials: Crisis cards (3-4 scenarios)
-   - Framework: Diagnose → Decide → Communicate → Document
-   - Output: Crisis response plans
-7. **Afternoon Tea** (30 min)
-8. **Debrief Crises** (15 min)
-9. **Activity 4: Scale/Pivot/Kill** (45 min)
-   - Materials: Pilot data dashboard, original criteria
-   - Output: Scale/Pivot/Kill recommendation with rationale
-10. **Wrap-up** (30 min) - Action planning, Q&A
-
----
-
-## Key Materials by Activity
-
-### Activity 1: Pilot Scoping
-- **Case:** Scoping exercise worksheet
-- **Cards:** Constraint cards (budget-cut, scope-creep, timeline-acceleration, vendor-lock-in)
-- **Handout:** Project scoping framework
-- **Instructor guide:** `instructor-materials/activity-1-pilot-scoping/`
-
-### Activity 2: Speed-Dating (Stakeholder Conversations)
-- **Cards:** 6 stakeholder role cards (CEO, CFO, Data Scientist, CS Manager, IT Security, End User)
-- **Handout:** Stakeholder mapping template
-- **Instructor guide:** `instructor-materials/activity-2-speed-dating/`
-
-### Activity 3: Crisis Management
-- **Cards:** Crisis cards (data-quality, team-resistance, executive-pressure, ethical-dilemma)
-- **Handout:** Crisis response framework (DDCD)
-- **Instructor guide:** `instructor-materials/activity-3-crisis-management/`
-
-### Activity 4: Scale/Pivot/Kill
-- **Data:** Pilot metrics dashboard (accessed via RetailFlow internal portal)
-- **Handout:** Scale/Pivot/Kill decision framework
-- **Instructor guide:** `instructor-materials/activity-4-scale-pivot-kill/`
-
----
-
-## Building the Website
-
-### Generate all materials
 ```bash
-./scripts/render-all.sh
+./scripts/build-site.sh      # renders the Quarto website + deck into docs/
 ```
 
-This renders all `.qmd` files to HTML and PDF, then organizes them into the `docs/` folder.
+Deploy: commit and push — GitHub Pages serves `main` `/docs` at
+`michael-borck.github.io/ai-in-delivery`. (`scripts/render-all.sh` is the old
+build and is deprecated — use `build-site.sh`.)
 
-**What gets rendered:**
-- Student materials → `docs/activities/`, `docs/handouts/`
-- Instructor materials → `docs/instructor/`
-- Slides → `docs/content/`
-- Pre-readings → `docs/pre-readings/`
+## The RetailFlow case study & chatbots (separate)
 
-### Test locally
-```bash
-open docs/index.html
-```
+The fictional company **RetailFlow** lives in its own repo (`sites/retailflow` →
+`retailflow.eduserver.au`): a storefront, an internal document repository (the
+dossiers students discern through, code `pilot2024`), and **7 leadership
+chatbots**. Those bots, plus the **course-assistant bot** on this site, run on
+AnythingLLM (`chat.eduserver.au`) and were built/maintained with
+[botstash](https://pypi.org/project/botstash/). See
+`sites/retailflow/chatbots/_setup/` for how the bots are configured.
 
-### Deploy to GitHub Pages
-1. Ensure `docs/` folder is committed to git
-2. GitHub Pages settings: Deploy from `main` branch, `/docs` folder
-3. Site will be live at: `https://[username].github.io/[repo-name]/`
+## Instructor materials
 
----
+In `instructor-materials/` (kept out of the published site): the facilitator
+quick-reference, the **RetailFlow document answer-key** (which dossier docs are
+signal vs. red herring), crisis walkthroughs, and feedback from prior cohorts.
 
-## Important Notes
+## License
 
-### Constraint Cards vs Crisis Cards
-
-**CONSTRAINT CARDS** (`/activities/materials/constraint-cards/`)
-- Used in: Activity 1 (Pilot Scoping)
-- Represent: Planning challenges BEFORE pilot starts
-- Examples: Budget cuts, scope creep, timeline pressure, vendor constraints
-- Files: `budget-cut.qmd`, `scope-creep.qmd`, `timeline-acceleration.qmd`, `vendor-lock-in.qmd`
-
-**CRISIS CARDS** (`/activities/materials/crisis-cards/`)
-- Used in: Activity 3 (Crisis Management)
-- Represent: Issues that arise DURING live pilot
-- Examples: Data quality, team resistance, executive pressure, ethical dilemmas
-- Files: `data-quality.qmd`, `team-resistance.qmd`, `executive-pressure.qmd`, `ethical-dilemma.qmd`
-
-**Don't mix them up!** Constraints are for planning; crises are for simulation.
-
-### Student Materials vs Instructor Materials
-
-**Student materials** (concise, 1-2 pages):
-- Location: `/handouts/` and `/activities/materials/`
-- Purpose: Quick reference during and after course
-- Access: Via companion website Resources menu
-
-**Instructor materials** (detailed, 10+ pages):
-- Location: `/instructor-materials/` (organized by activity)
-- Purpose: Facilitation guides, sample answers, teaching notes
-- Access: Via instructor portal (password-protected)
-
-Both exist for the same frameworks, just different detail levels.
-
-### Instructor Portal
-
-**Access:** Click "🔐 Instructor" in companion site navigation
-**Password:** `instructor2025`
-
-**What's included:**
-- Facilitator quick reference (PRINT THIS!)
-- Activity facilitation guides (all 4 activities)
-- Framework walkthroughs
-- Sample answers and assessment rubrics
-- Feedback from previous deliveries
-
-### RetailFlow Case Study
-
-**Main site:** [retailflow.serveur.au](https://retailflow.serveur.au)
-- Company overview, staff bios, products
-- Provides context for all activities
-
-**Internal portal:** [retailflow.serveur.au/internal](https://retailflow.serveur.au/internal)
-- Password: `pilot2024`
-- Contains Week 6 pilot data dashboard
-- Used in Activity 4 (Scale/Pivot/Kill)
-
-### Source Files vs Generated Files
-
-**Never edit files in `/docs/` directly** - they're auto-generated.
-
-- **Edit:** Files in `/activities/`, `/handouts/`, `/content/`, `/instructor-materials/`
-- **Render:** Run `./scripts/render-all.sh`
-- **Output:** Appears in `/docs/`
-
----
-
-## Troubleshooting
-
-### Render script fails
-- Check Quarto is installed: `quarto --version`
-- Ensure you're in the project root directory
-- Run: `./scripts/render-all.sh` (note: script is now in scripts/ folder)
-- Check .qmd files have valid YAML headers
-
-### Website links broken
-- Re-run render script: `./scripts/render-all.sh`
-- Check file names match links in `docs/index.html`
-- Verify files were generated in `docs/` folders
-
-### Cards missing from docs/
-- Check source file exists in `/activities/materials/`
-- Re-run render script
-- Check for errors in Quarto YAML headers
-- Verify file naming (lowercase, no prefixes)
-
-### Instructor portal not loading
-- Check `docs/instructor.html` exists
-- Verify password: `instructor2025`
-- Clear browser cache and try again
-
-### RetailFlow internal portal not loading
-- Check password: `pilot2024`
-- Verify `retailflow-site/internal.html` exists
-- Clear browser cache
-
----
-
-## Documentation
-
-- **PROJECT_STRUCTURE.md** - Detailed organisation guide (read this!)
-- **scripts/render-all.sh** - Build script for generating website
-- **instructor-materials/README.qmd** - Instructor materials guide
-
----
-
-## Questions?
-
-For detailed explanations of:
-- Folder organisation logic → See `PROJECT_STRUCTURE.md`
-- Activity delivery structure → See `PROJECT_STRUCTURE.md` > "Activity Delivery Map"
-- File naming conventions → See `PROJECT_STRUCTURE.md` > "File Naming Conventions"
-- Adding new materials → See `PROJECT_STRUCTURE.md` > "Common Tasks"
-- Instructor materials → See `instructor-materials/README.qmd`
-
----
-
-## License & Attribution
-
-This masterclass was developed for Curtin University.
-
-**Last updated:** October 30, 2024
+Developed for Curtin University. MIT (see LICENSE). Last revamped June 2026.

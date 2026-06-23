@@ -35,7 +35,7 @@ This framework helps you make that decision based on data, not emotion.
 - You need more data before scaling
 - Time and resources are available
 
-**Example:** "Accuracy is 88% vs. 90% target. That's solvable—4 more weeks of model retraining will get us there. PIVOT: Extend 4 weeks, then reassess for scale."
+**Example:** "Accuracy is 88% vs. 90% target. That's solvable: 4 more weeks of model retraining will get us there. PIVOT: Extend 4 weeks, then reassess for scale."
 
 ---
 
@@ -48,7 +48,7 @@ This framework helps you make that decision based on data, not emotion.
 - The cost to continue exceeds the value
 - Better alternatives exist
 
-**Example:** "Customers rejected the approach. We built for speed but they want personalization. A different approach is needed. KILL this version and start over."
+**Example:** "Customers rejected the approach. We built for speed but they want personalisation. A different approach is needed. KILL this version and start over."
 
 ---
 
@@ -76,9 +76,9 @@ Look at your **Go/No-Go criteria from planning**. For each one, did you hit the 
 Look at the gaps. Are they **solvable** (need more time/resources) or **fundamental** (the approach doesn't work)?
 
 **Solvable gaps:**
-- "Accuracy is 88% vs. 90%—that's a 2-point gap we can close with more training"
-- "Team adoption is low—they just need more exposure"
-- "Cost is higher than expected—we can optimize once we hit scale"
+- "Accuracy is 88% vs. 90%, that's a 2-point gap we can close with more training"
+- "Team adoption is low; they just need more exposure"
+- "Cost is higher than expected; we can optimise once we hit scale"
 
 **Fundamental gaps:**
 - "Customers hate this approach"
@@ -142,6 +142,6 @@ Use this to document your call:
 - Data beats emotion
 - "Not perfect yet" is not the same as "doesn't work"
 - You can decide with imperfect information
-- Most projects PIVOT—that's normal and healthy
+- Most projects PIVOT; that's normal and healthy
 
 **The goal isn't to make the perfect decision. It's to make the best decision you can with the data you have.**

@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="What a large language model actually is, in plain English — and why ‘confidently wrong’ is its default way of failing.">
+<meta name="description" content="What a large language model actually is, in plain English, and why ‘confidently wrong’ is its default way of failing.">
 
 <title>AI in five minutes (for non-technical leaders) – AI in Delivery</title>
 <style>
@@ -75,11 +75,11 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="AI in five minutes (for non-technical leaders) – AI in Delivery">
-<meta property="og:description" content="What a large language model actually is, in plain English — and why ‘confidently wrong’ is its default way of failing.">
+<meta property="og:description" content="What a large language model actually is, in plain English, and why ‘confidently wrong’ is its default way of failing.">
 <meta property="og:image" content="https://michael-borck.github.io/ai-in-delivery/readings/content/images/og-image.png">
 <meta property="og:site_name" content="AI in Delivery">
 <meta name="twitter:title" content="AI in five minutes (for non-technical leaders) – AI in Delivery">
-<meta name="twitter:description" content="What a large language model actually is, in plain English — and why ‘confidently wrong’ is its default way of failing.">
+<meta name="twitter:description" content="What a large language model actually is, in plain English, and why ‘confidently wrong’ is its default way of failing.">
 <meta name="twitter:image" content="https://michael-borck.github.io/ai-in-delivery/readings/content/images/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -151,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    What a large language model actually is, in plain English — and why ‘confidently wrong’ is its default way of failing.
+    What a large language model actually is, in plain English, and why ‘confidently wrong’ is its default way of failing.
   </div>
 </div>
 
@@ -168,24 +168,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>You do not need to know how an engine works to drive a car well, but you do need to know what it can and can’t do — that it needs fuel, that it won’t go underwater, that the brakes have limits. The same is true here. You do not need the mathematics of AI. You need an honest mental model of what the thing actually is, so you can lead it without either over-trusting it or dismissing it. Five minutes is enough.</p>
+<p>You do not need to know how an engine works to drive a car well, but you do need to know what it can and can’t do: that it needs fuel, that it won’t go underwater, that the brakes have limits. The same is true here. You do not need the mathematics of AI. You need an honest mental model of what the thing actually is, so you can lead it without either over-trusting it or dismissing it. Five minutes is enough.</p>
 <p><strong>What a large language model actually is</strong></p>
-<p>Strip away the marketing and a large language model is, at heart, a very sophisticated pattern-completer. It has been trained on an enormous amount of human writing, and from all of that it has learned what words and ideas tend to follow other words and ideas. When you ask it something, it does not look up a fact or work out an answer. It produces the most plausible <em>continuation</em> — the most likely next words — given your question and everything it has absorbed.</p>
+<p>Strip away the marketing and a large language model is, at heart, a very sophisticated pattern-completer. It has been trained on an enormous amount of human writing, and from all of that it has learned what words and ideas tend to follow other words and ideas. When you ask it something, it does not look up a fact or work out an answer. It produces the most plausible <em>continuation</em> (the most likely next words) given your question and everything it has absorbed.</p>
 <p>A useful way to hold this: the model gives you a fluent, convincing <strong>average</strong> of everything it has seen on a topic. That average is often genuinely excellent, because the average of a vast amount of competent human writing is itself pretty competent. But it is an average, not a truth. The system <strong>predicts; it does not reason, and it does not “know.”</strong> There is no understanding behind the words, no checking against reality, no little voice saying “wait, is that actually correct?” There is only: what would plausibly come next?</p>
 <p><strong>Why it’s brilliant at some things and quietly unreliable at others</strong></p>
 <p>Once you see it as a fluent averaging machine, its strengths and weaknesses stop being surprising.</p>
 <p>It is <em>brilliant</em> at tasks where fluency and typicality are exactly what you want: drafting, rephrasing, summarising, brainstorming, translating, turning a rough thought into clean prose, explaining a familiar idea in simpler terms. Here, “the most plausible version” is the right answer.</p>
-<p>It is <em>quietly unreliable</em> at tasks that need a single correct fact, a precise figure, a real citation, or genuine step-by-step reasoning that must be right rather than merely plausible. It will happily produce something that <em>sounds</em> exactly like a correct answer — same confidence, same polish — whether or not it is true. The trouble is that the fluent-but-wrong answer looks identical to the fluent-and-right one. Nothing in the tone warns you.</p>
+<p>It is <em>quietly unreliable</em> at tasks that need a single correct fact, a precise figure, a real citation, or genuine step-by-step reasoning that must be right rather than merely plausible. It will happily produce something that <em>sounds</em> exactly like a correct answer (same confidence, same polish) whether or not it is true. The trouble is that the fluent-but-wrong answer looks identical to the fluent-and-right one. Nothing in the tone warns you.</p>
 <p><strong>What “hallucination” means, and why confident-but-wrong is the default</strong></p>
-<p>When the model states something false as if it were fact — invents a source, a statistic, a quote, a name — that is what people call a <strong>hallucination</strong>. The word makes it sound like a glitch, an occasional malfunction. It isn’t. It is the same machinery working exactly as designed. The system is <em>always</em> producing a plausible continuation; sometimes the most plausible-sounding continuation simply happens not to be true. It has no separate sense of “fact” to fall back on.</p>
-<p>So the failure mode to expect is not <em>blank</em> or <em>error message</em> or <em>I don’t know</em>. It is <strong>confident and wrong</strong> — delivered with the same assurance as everything else. That is the single most important thing to carry into any AI project. The danger is rarely that the AI refuses to help. The danger is that it helps convincingly when it shouldn’t.</p>
-<p>None of this is cause for hype or for doom. It is just the shape of the tool. Used where fluency is the goal, it is remarkable. Used where exactness matters, it needs a human checking the work. Everything else in this course builds on that one durable distinction — so if you remember nothing else, remember this: it produces a convincing average, and a convincing average is not the same as the truth.</p>
+<p>When the model states something false as if it were fact (invents a source, a statistic, a quote, a name) that is what people call a <strong>hallucination</strong>. The word makes it sound like a glitch, an occasional malfunction. It isn’t. It is the same machinery working exactly as designed. The system is <em>always</em> producing a plausible continuation; sometimes the most plausible-sounding continuation simply happens not to be true. It has no separate sense of “fact” to fall back on.</p>
+<p>So the failure mode to expect is not <em>blank</em> or <em>error message</em> or <em>I don’t know</em>. It is <strong>confident and wrong</strong>, delivered with the same assurance as everything else. That is the single most important thing to carry into any AI project. The danger is rarely that the AI refuses to help. The danger is that it helps convincingly when it shouldn’t.</p>
+<p>None of this is cause for hype or for doom. It is just the shape of the tool. Used where fluency is the goal, it is remarkable. Used where exactness matters, it needs a human checking the work. Everything else in this course builds on that one durable distinction, so if you remember nothing else, remember this: it produces a convincing average, and a convincing average is not the same as the truth.</p>
 
 
 
 </main> <!-- /main -->
-<!-- Course assistant chatbot — injected site-wide via _quarto.yml include-after-body -->
-<script data-embed-id="02e13977-3067-4888-89f7-69f15d77df40" data-base-api-url="https://chat.eduserver.au/api/embed" data-assistant-name="AI in Delivery — Course Assistant" data-greeting="Hi! I'm your course assistant. Ask me about anything in AI in Delivery — the five differences, the trust tool, the sprints, or how to apply it to your own work." src="https://chat.eduserver.au/embed/anythingllm-chat-widget.min.js">
+<!-- Course assistant chatbot, injected site-wide via _quarto.yml include-after-body -->
+<script data-embed-id="02e13977-3067-4888-89f7-69f15d77df40" data-base-api-url="https://chat.eduserver.au/api/embed" data-assistant-name="AI in Delivery: Course Assistant" data-greeting="Hi! I'm your course assistant. Ask me about anything in AI in Delivery: the five differences, the trust tool, the sprints, or how to apply it to your own work." src="https://chat.eduserver.au/embed/anythingllm-chat-widget.min.js">
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -596,7 +596,7 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>AI in Delivery — <em>Leading Projects That Ship</em></p>
+<p>AI in Delivery: <em>Leading Projects That Ship</em></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

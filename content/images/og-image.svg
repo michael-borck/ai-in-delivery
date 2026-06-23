@@ -20,7 +20,7 @@
 
   <text x="84" y="150" font-size="22" font-weight="700" fill="#ffffff" opacity="0.85" letter-spacing="3">AI CAPABILITY LIFECYCLE SERIES · COURSE 3</text>
   <text x="80" y="330" font-size="104" font-weight="800" fill="#ffffff" letter-spacing="-2">AI in Delivery</text>
-  <text x="84" y="400" font-size="40" fill="#ffffff" opacity="0.94">Leading projects that ship — without the predictable failures.</text>
+  <text x="84" y="400" font-size="40" fill="#ffffff" opacity="0.94">Leading projects that ship, without the predictable failures.</text>
 
   <line x1="84" y1="500" x2="320" y2="500" stroke="#ffffff" stroke-width="3" opacity="0.5"/>
   <text x="84" y="552" font-size="26" fill="#ffffff" opacity="0.9" font-weight="600">Curtin University · Executive Education</text>

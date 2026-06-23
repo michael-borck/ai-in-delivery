@@ -1,18 +1,18 @@
-# Project Structure — AI in Delivery
+# Project Structure: AI in Delivery
 
 How this repo is organised. The repo is a **Quarto website** (`type: website`)
 that renders the companion site into `docs/`, which GitHub Pages serves.
 
 > Revamped June 2026. The previous version of this course (and this document)
 > described a four-activity structure with role/constraint/crisis cards and a
-> `render-all.sh` build — all superseded. The current course is the five
+> `render-all.sh` build, all superseded. The current course is the five
 > differences + three sprints; the build is `scripts/build-site.sh`.
 
 ## Source vs. generated
 
 - **Edit:** the `.qmd`/`.md`/`.scss` source at the repo root and in
   `readings/`, `activities/`, `handouts/`, `content/`.
-- **Generated:** everything in `docs/` — produced by `scripts/build-site.sh`.
+- **Generated:** everything in `docs/`, produced by `scripts/build-site.sh`.
   Don't hand-edit `docs/`.
 
 ## What renders into the site
@@ -38,7 +38,7 @@ the RetailFlow document answer-key, crisis walkthroughs, feedback),
 
 - Site theme: `_quarto.yml` → `theme: [cosmo, brand.scss]`.
 - Listing pages (`before`, `workshop`, `frameworks`) pull `title` + `description`
-  from each content file's YAML front matter — keep those fields when adding
+  from each content file's YAML front matter; keep those fields when adding
   material.
 
 ## Build & deploy
@@ -53,12 +53,12 @@ Local preview: `open docs/index.html`.
 
 ## Related, but separate repos
 
-- **`sites/retailflow`** → `retailflow.eduserver.au` — the fictional company:
+- **`sites/retailflow`** → `retailflow.eduserver.au`: the fictional company:
   storefront, internal document repository (the dossiers; access code
   `pilot2024`), and the 7 leadership chatbots. Its own Quarto-rendered
   `chatbots/` + static storefront/documents. Bot setup in
   `chatbots/_setup/`.
-- **AnythingLLM** (`chat.eduserver.au`) — hosts the 7 RetailFlow staff bots and
+- **AnythingLLM** (`chat.eduserver.au`) hosts the 7 RetailFlow staff bots and
   the course-assistant bot. Managed with `botstash` (`pip install botstash`).
 
 ## Adding material (common tasks)

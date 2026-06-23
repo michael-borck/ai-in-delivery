@@ -45,7 +45,7 @@
 | **Full Pause** | 2-3 weeks to fix | Medium (lose momentum) | Clear responsibility |
 | **Hybrid Approach** | 2-3 weeks + ongoing QA | Medium (team overloaded) | Shared responsibility |
 | **Continue + Enhanced QA** | 5-7 days if retraining works | HIGH (risky if timeline slips) | Heavy burden |
-| **Kill Project** | Immediate | High (lose credibility) | Demoralizing |
+| **Kill Project** | Immediate | High (lose credibility) | Demoralising |
 
 **Recommended: Full Pause**
 - Stop all AI responses immediately

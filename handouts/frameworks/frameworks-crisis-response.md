@@ -1,6 +1,6 @@
 ---
 title: "Crisis response (DDCD)"
-description: "Diagnose → Decide → Communicate → Document — leading through the inevitable AI-project crisis."
+description: "Diagnose → Decide → Communicate → Document: leading through the inevitable AI-project crisis."
 ---
 
 ## How to Lead When Things Go Wrong
@@ -17,7 +17,7 @@ When a crisis hits, follow this sequence:
 
 **Get facts, not interpretations.**
 
-- What actually happened? (Not what it means—what happened?)
+- What actually happened? (Not what it means; what happened?)
 - How big is the problem? (How many people/systems affected?)
 - What caused it? (Root cause analysis)
 - Who needs to know?
@@ -124,7 +124,7 @@ While DDCD is the framework for all crises, how you apply it changes:
 - Find the root cause (not the symptom)
 
 **During DECIDE:**
-- Don't aim for perfect—aim for best available
+- Don't aim for perfect; aim for best available
 - Make trade-offs visible and conscious
 - Choose the option that addresses root cause
 

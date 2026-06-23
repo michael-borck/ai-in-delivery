@@ -92,7 +92,7 @@ Don't say yes or no. Show the CEO the data on what 4 weeks requires. Then propos
 > "The board pressure is real. I want to get you faster progress without betting the project."
 
 2. **Show the data**
-> "Full expansion needs 3-4 weeks for data training, 2 weeks testing, 1-2 weeks team training. That's 7-8 weeks minimum. Four weeks means skipping testing or training—that's when things break."
+> "Full expansion needs 3-4 weeks for data training, 2 weeks testing, 1-2 weeks team training. That's 7-8 weeks minimum. Four weeks means skipping testing or training; that's when things break."
 
 3. **Share the risk**
 > "When you scale too fast without proper testing, you hit problems around week 12. Errors compound. Now you're fixing bugs in production affecting thousands of customers."

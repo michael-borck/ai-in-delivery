@@ -1,11 +1,11 @@
 ---
-title: "Sprint 3 — Roadmap, risk & the go/no-go"
+title: "Sprint 3: Roadmap, risk & the go/no-go"
 description: "A delivery roadmap with gates, a risk register, and the Scale/Pivot/Kill call."
 ---
 
 **Your initiative:** _______________________  **Group:** __________
 
-Now turn your scope, stakeholders and checkpoints into a delivery plan — then defend it when the staff push back and a crisis hits. Remember Difference 2: **progress is illusory**, so your gates exist to catch the demo-to-production gap before it reaches a customer or the board.
+Now turn your scope, stakeholders and checkpoints into a delivery plan, then defend it when the staff push back and a crisis hits. Remember Difference 2: **progress is illusory**, so your gates exist to catch the demo-to-production gap before it reaches a customer or the board.
 
 ---
 
@@ -30,18 +30,18 @@ Now turn your scope, stakeholders and checkpoints into a delivery plan — then 
 
 Your facilitator will hand your group a crisis. Respond:
 
-- **Diagnose** — is this technical, people, leadership, or ethical? ______________
-- **Decide** — your call under uncertainty: ______________
-- **Communicate** — who, and what do you say? ______________
-- **Document** — the decision and the reason: ______________
+- **Diagnose**: is this technical, people, leadership, or ethical? ______________
+- **Decide**: your call under uncertainty: ______________
+- **Communicate**: who, and what do you say? ______________
+- **Document**: the decision and the reason: ______________
 
 ## 4. The gate-1 decision
 
 At your first evaluation gate, the data is ambiguous. Make the call and defend it with evidence:
 
-**SCALE / PIVOT / KILL** (circle one) — because: ______________________________________________
+**SCALE / PIVOT / KILL** (circle one), because: ______________________________________________
 
-> Killing a project that isn't working, early, is success — not failure. The cost of wrongly scaling is far higher than the cost of wrongly killing.
+> Killing a project that isn't working, early, is success, not failure. The cost of wrongly scaling is far higher than the cost of wrongly killing.
 
 ---
 

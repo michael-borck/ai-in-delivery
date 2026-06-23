@@ -1,4 +1,4 @@
-# Facilitator Quick Reference — AI in Delivery (revamped)
+# Facilitator Quick Reference: AI in Delivery (revamped)
 
 **One-day flow. One project, carried all the way through. Print this.**
 
@@ -41,7 +41,7 @@ Set expectations early (fixes the old #1 critique): *"This is a leadership/deliv
 
 ## Pacing note (from prior feedback)
 
-Use a **visible timer**. Discussion ran long last time — keep sprints tight, protect the debriefs.
+Use a **visible timer**. Discussion ran long last time, so keep sprints tight and protect the debriefs.
 
 ## Delivery note on the inserts
 
@@ -49,4 +49,4 @@ Keep the apprenticeship/evaluator material conceptual. **Don't quote model versi
 
 ## Capstone line
 
-*"Notice how generic your AI-assisted first draft was — that sameness is the lesson. What made a plan good was your judgement: where you kept a human, what you refused to automate, the taste you protected. When everyone runs the same model, that's the only edge left."*
+*"Notice how generic your AI-assisted first draft was. That sameness is the lesson. What made a plan good was your judgement: where you kept a human, what you refused to automate, the taste you protected. When everyone runs the same model, that's the only edge left."*

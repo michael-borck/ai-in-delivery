@@ -1,14 +1,14 @@
 This feedback often doesn't mean "not enough content," it means "not enough density or advanced application." One participant even noted that discussion times were "way too long" , which confirms it's a pacing and depth issue, not a volume issue.
 
-Your paper-based, group-discussion approach is excellent for teaching leadership, communication, and strategy—which your feedback confirms was the most successful part (e.g., "common failure reason... is the human component" ).
+Your paper-based, group-discussion approach is excellent for teaching leadership, communication, and strategy, which your feedback confirms was the most successful part (e.g., "common failure reason... is the human component" ).
 
 The problem is the expectation mismatch. Participants heard "AI" and expected a technical/practical class ("how to use/integrate AI" ), but you delivered a strategic/leadership class.
 
-You can fix this by strategically "leveling up" your existing activities and integrating tech in a controlled way.
+You can fix this by strategically "levelling up" your existing activities and integrating tech in a controlled way.
 
 ## How to Address: "Too Light" & "Not at PM Level"
 
-This is about adding analytical rigor and strategic depth to your existing activities, not adding more activities.
+This is about adding analytical rigour and strategic depth to your existing activities, not adding more activities.
 
 Aggressively Set Expectations: Start the masterclass by being explicit. "This is a strategic leadership masterclass on managing AI projects, focusing on the human, ethical, and change management challenges. This is not a technical, hands-on coding or platform workshop." This filters audience expectations immediately.
 
@@ -31,7 +31,7 @@ This "group-prompting" exercise achieves two goals:
 
 They "actually use AI" .
 
-It's still a group discussion, now focused on how to ask the right questions—a key leadership skill. They can then discuss the (often flawed) AI-generated output, which is a great lesson in itself.
+It's still a group discussion, now focused on how to ask the right questions, a key leadership skill. They can then discuss the (often flawed) AI-generated output, which is a great lesson in itself.
 
 The "10-Minute Mini-Case" Opener: To address the "more real examples" feedback, start each of your four modules with a different, 10-minute, real-world mini-case.
 

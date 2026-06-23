@@ -40,7 +40,7 @@
 **Why it matters:**
 - Sarah has 8 years tenure and informal power
 - Other agents are following her lead
-- You can't "decide" people into adoption—you have to engage them
+- You can't "decide" people into adoption; you have to engage them
 
 ---
 
@@ -73,21 +73,21 @@
 **Private conversation with Sarah:**
 
 Your opening (not defensive):
-> "Sarah, I noticed you're skeptical about the AI. I want to understand why. Your 8 years here matter to me, and I care about what you think."
+> "Sarah, I noticed you're sceptical about the AI. I want to understand why. Your 8 years here matter to me, and I care about what you think."
 
 Then LISTEN. Don't interrupt. Don't defend.
 
 **If she fears job loss:**
-> "I won't lie—your job is changing. But not because AI is replacing you. Because we're removing the boring, repetitive stuff so you can do work that only you can do. Work that's more interesting."
+> "I won't lie: your job is changing. But not because AI is replacing you. Because we're removing the boring, repetitive stuff so you can do work that only you can do. Work that's more interesting."
 
 **If she feels unheard:**
-> "You're right—I didn't ask you first, and that was my mistake. Here's what I'm committing to: Weekly check-ins where we review data together. You help me decide."
+> "You're right. I didn't ask you first, and that was my mistake. Here's what I'm committing to: Weekly check-ins where we review data together. You help me decide."
 
 **Your ask:**
 > "Would you be willing to help me design how we implement this? I'd rather have you building this WITH me than me imposing it ON you."
 
 **Then, team meeting:**
-> "Some of you are concerned about AI. Those concerns are legitimate. Let me be direct: You're not being replaced. AI handles routine stuff so you can do the work that matters. And yes, your role is changing—for the better. You decide if it works. You're not subjects of this change; you're judges of it."
+> "Some of you are concerned about AI. Those concerns are legitimate. Let me be direct: You're not being replaced. AI handles routine stuff so you can do the work that matters. And yes, your role is changing, for the better. You decide if it works. You're not subjects of this change; you're judges of it."
 
 **Make Sarah the feedback leader, not the resistance leader.**
 
@@ -103,7 +103,7 @@ Then LISTEN. Don't interrupt. Don't defend.
 - **Key learning:** People resist change they don't understand or control. Involvement beats announcement every time.
 
 **What to change next time:**
-- Involve skeptics in design phase, not as crisis response
+- Involve sceptics in design phase, not as crisis response
 - Give affected people a voice in decisions
 - Address fears about job changes directly
 - Build in regular feedback loops

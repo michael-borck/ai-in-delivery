@@ -1,14 +1,14 @@
 # AI in Delivery: Leading Projects That Ship
 
-Course 3 of the **AI Capability Lifecycle Series** (Curtin exec-ed). A one-day masterclass for project managers and delivery leads on shipping AI projects without the predictable failures. Formerly "AI Leadership & Project Management Masterclass" — fully revamped June 2026.
+Course 3 of the **AI Capability Lifecycle Series** (Curtin exec-ed). A one-day masterclass for project managers and delivery leads on shipping AI projects without the predictable failures. Formerly "AI Leadership & Project Management Masterclass", fully revamped June 2026.
 
 This repo holds the teaching materials **and** builds the companion website (Quarto → GitHub Pages).
 
 ## The course in brief
 
-**Spine — why AI delivery is different.** Five things every project manager assumes that AI breaks: (1) "done" can't be specified, (2) a working demo is a trap, (3) the data is the uncertainty and it's discovered not specified, (4) verification *is* the product, (5) generic competence is the baseline — the edge is human judgement. Anchored on the **trust tool** (Average/Precise × Small/Large) from *Conversation, Not Delegation*.
+**Spine: why AI delivery is different.** Five things every project manager assumes that AI breaks: (1) "done" can't be specified, (2) a working demo is a trap, (3) the data is the uncertainty and it's discovered not specified, (4) verification *is* the product, (5) generic competence is the baseline, and the edge is human judgement. Anchored on the **trust tool** (Average/Precise × Small/Large) from *Conversation, Not Delegation*.
 
-**Shape — one project, three sprints.** Participants are the delivery lead for one funded RetailFlow initiative and carry it through: **Sprint 1** scope it against reality · **Sprint 2** stakeholders & human-in-the-loop · **Sprint 3** roadmap, risk & the go/no-go. They scope and stress-test by interviewing the RetailFlow leadership team — live AI chatbots. They leave with a delivery design (scope, roadmap with gates, stakeholder + HITL plan, risk register).
+**Shape: one project, three sprints.** Participants are the delivery lead for one funded RetailFlow initiative and carry it through: **Sprint 1** scope it against reality · **Sprint 2** stakeholders & human-in-the-loop · **Sprint 3** roadmap, risk & the go/no-go. They scope and stress-test by interviewing the RetailFlow leadership team: live AI chatbots. They leave with a delivery design (scope, roadmap with gates, stakeholder + HITL plan, risk register).
 
 ## Repo layout
 
@@ -28,7 +28,7 @@ activities/
 handouts/              Take-home frameworks
 content/slide-deck.md  The slide deck (rendered separately into docs/content)
 instructor-materials/  Facilitator guide, the RetailFlow document answer-key,
-                       crisis walkthroughs, past feedback — NOT published
+                       crisis walkthroughs, past feedback (NOT published)
 scripts/build-site.sh  Build the site (website + deck) into docs/
 docs/                  Generated site (GitHub Pages serves main /docs)
 ```
@@ -39,9 +39,9 @@ docs/                  Generated site (GitHub Pages serves main /docs)
 ./scripts/build-site.sh      # renders the Quarto website + deck into docs/
 ```
 
-Deploy: commit and push — GitHub Pages serves `main` `/docs` at
+Deploy: commit and push. GitHub Pages serves `main` `/docs` at
 `michael-borck.github.io/ai-in-delivery`. (`scripts/render-all.sh` is the old
-build and is deprecated — use `build-site.sh`.)
+build and is deprecated; use `build-site.sh`.)
 
 ## The RetailFlow case study & chatbots (separate)
 

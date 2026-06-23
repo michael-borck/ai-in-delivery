@@ -11,8 +11,8 @@ via `course-bot.html` → `_quarto.yml` `include-after-body`).
 | Retrieval | `similarityThreshold: 0`, `topN: 6` (defaults 0.25 / 4 are too strict; they made the bot miss the schedule) |
 | Chat mode | `chat` (uses retrieved docs **and** the model's own knowledge) |
 
-## Knowledge (19 docs, student-facing only)
-The 3 readings, the 5 site pages (`index/before/workshop/frameworks/team.qmd`),
+## Knowledge (20 docs, student-facing only)
+The 3 readings, the 6 site pages (`index/before/workshop/frameworks/team/series.qmd`),
 the 4 initiative cards, the 3 sprint worksheets, `frameworks-overview.md` + the 2
 framework handouts, and `content/course-agenda.md` (plain-prose schedule).
 **Not** included: instructor materials, the document answer-key, or the deck's

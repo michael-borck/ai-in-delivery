@@ -123,14 +123,14 @@
     "href": "activities/worksheets/sprint-2-stakeholders-hitl.html",
     "title": "Sprint 2 — Stakeholders & human-in-the-loop",
     "section": "",
-    "text": "Your initiative: _______________________ Group: __________\nA working AI system isn’t a tool — it’s a division of labour between human judgement and machine output. This sprint you design that division, and the stakeholder plan around it. Interview Emma (CEO), Tom (Customer Service) and David (CFO)."
+    "text": "Your initiative: _______________________ Group: __________\nA working AI system isn’t a tool — it’s a division of labour between human judgement and machine output. This sprint you design that division, and the stakeholder plan around it. Interview Emma (Managing Director), Tom (Customer Service) and David (CFO)."
   },
   {
     "objectID": "activities/worksheets/sprint-2-stakeholders-hitl.html#stakeholder-plan",
     "href": "activities/worksheets/sprint-2-stakeholders-hitl.html#stakeholder-plan",
     "title": "Sprint 2 — Stakeholders & human-in-the-loop",
     "section": "1. Stakeholder plan",
-    "text": "1. Stakeholder plan\n\n\n\n\n\n\n\n\n\nStakeholder\nWhat they need / fear\nHow you’ll manage them\nPower × Interest\n\n\n\n\nEmma (CEO / sponsor)\n\n\nHigh / High\n\n\nDavid (CFO)\n\n\n\n\n\nTom (CS / frontline)\n\n\n\n\n\nadd others you met"
+    "text": "1. Stakeholder plan\n\n\n\n\n\n\n\n\n\nStakeholder\nWhat they need / fear\nHow you’ll manage them\nPower × Interest\n\n\n\n\nEmma (Managing Director / sponsor)\n\n\nHigh / High\n\n\nDavid (CFO)\n\n\n\n\n\nTom (CS / frontline)\n\n\n\n\n\nadd others you met"
   },
   {
     "objectID": "activities/worksheets/sprint-2-stakeholders-hitl.html#human-in-the-loop-checkpoints",
@@ -354,7 +354,7 @@
     "href": "team.html#who-you-can-talk-to",
     "title": "Meet the RetailFlow team",
     "section": "Who you can talk to",
-    "text": "Who you can talk to\n\n\n\n\n\n\n\n\nWho\nRole\nAsk them about\n\n\n\n\nEmma Rodriguez\nCEO\nstrategy, board expectations, the promise that was made\n\n\nDavid Chen\nCFO\nbudgets, ROI, the financial go/no-go\n\n\nMarcus Kim\nCIO\ntechnology, legacy systems, build vs buy\n\n\nDr. Priya Sharma\nHead of Data & Analytics\ndata readiness, feasibility, realistic timelines\n\n\nSarah Thompson\nCOO\nstore operations, rollout, the operational reality\n\n\nTom Walsh\nCustomer Service Manager\nthe frontline team, customer impact\n\n\nLisa Nguyen\nChief Customer Officer\ncustomer experience"
+    "text": "Who you can talk to\n\n\n\n\n\n\n\n\nWho\nRole\nAsk them about\n\n\n\n\nEmma Rodriguez\nManaging Director\nstrategy, board expectations, the promise that was made\n\n\nDavid Chen\nCFO\nbudgets, ROI, the financial go/no-go\n\n\nMarcus Kim\nCIO\ntechnology, legacy systems, build vs buy\n\n\nDr. Priya Sharma\nHead of Data & Analytics\ndata readiness, feasibility, realistic timelines\n\n\nSarah Thompson\nCOO\nstore operations, rollout, the operational reality\n\n\nTom Walsh\nCustomer Service Manager\nthe frontline team, customer impact\n\n\nLisa Nguyen\nGeneral Manager, Customer Experience\ncustomer experience"
   },
   {
     "objectID": "team.html#how-to-get-value-from-them",
@@ -396,7 +396,7 @@
     "href": "activities/initiative-cards/customer-service-chatbot.html#who-to-interview-and-the-tension-they-bring",
     "title": "Customer-service chatbot",
     "section": "Who to interview, and the tension they bring",
-    "text": "Who to interview, and the tension they bring\n\nTom Walsh (Customer Service Manager) — his team gets automated first. The evaluator’s-advantage and apprenticeship-pipeline questions land hardest here. Who reviews the bot’s answers, and does that role build or consume his juniors’ judgement?\nPriya Sharma (Data) — feasibility and realistic “good enough” thresholds.\nEmma Rodriguez (CEO) — what was promised to the board, and by when."
+    "text": "Who to interview, and the tension they bring\n\nTom Walsh (Customer Service Manager) — his team gets automated first. The evaluator’s-advantage and apprenticeship-pipeline questions land hardest here. Who reviews the bot’s answers, and does that role build or consume his juniors’ judgement?\nPriya Sharma (Data) — feasibility and realistic “good enough” thresholds.\nEmma Rodriguez (Managing Director) — what was promised to the board, and by when."
   },
   {
     "objectID": "activities/initiative-cards/customer-service-chatbot.html#your-starting-question-for-good-enough",

@@ -31,7 +31,7 @@ Conversation/transcript data is **good** — the best of the four initiatives. P
 
 - **Tom Walsh (Customer Service Manager)** — his team gets automated first. The evaluator's-advantage and apprenticeship-pipeline questions land hardest here. Who reviews the bot's answers, and does that role build or consume his juniors' judgement?
 - **Priya Sharma (Data)** — feasibility and realistic "good enough" thresholds.
-- **Emma Rodriguez (CEO)** — what was promised to the board, and by when.
+- **Emma Rodriguez (Managing Director)** — what was promised to the board, and by when.
 
 ## Your starting question for "good enough"
 

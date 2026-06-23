@@ -224,7 +224,7 @@ A **delivery design for a real AI project**:
 - Realistic, fictional Australian fashion & homewares retailer. We use it all day.
 - Shift from the old framing: this is not "should we invest?" (that's the Strategy course). The money is committed. Your job is delivery.
 - Each group will take a *different* funded initiative, so no two designs look alike: customer-service chatbot, dynamic pricing, inventory optimisation, or fraud detection.
-- "Your stakeholders are down the hall — Emma the CEO, Marcus the CIO, Priya in data, David in finance, Tom in customer service. You'll talk to them this afternoon."
+- "Your stakeholders are down the hall — Emma the Managing Director, Marcus the CIO, Priya in data, David in finance, Tom in customer service. You'll talk to them this afternoon."
 :::
 
 ---
@@ -249,7 +249,7 @@ A **delivery design for a real AI project**:
 
 ![](./images/speed-dating.png)
 
-**Interview Emma (CEO), Tom (Customer Service), David (CFO). Decide where a human must stay in the loop.**
+**Interview Emma (Managing Director), Tom (Customer Service), David (CFO). Decide where a human must stay in the loop.**
 
 ::: {.notes}
 - This is Difference 4 made concrete. Output: a stakeholder plan + a human-in-the-loop checkpoint design.

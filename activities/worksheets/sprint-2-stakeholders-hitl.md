@@ -5,7 +5,7 @@ description: "A stakeholder plan and a human-in-the-loop checkpoint design."
 
 **Your initiative:** _______________________  **Group:** __________
 
-A working AI system isn't a tool — it's a **division of labour between human judgement and machine output**. This sprint you design that division, and the stakeholder plan around it. **Interview Emma (CEO), Tom (Customer Service) and David (CFO).**
+A working AI system isn't a tool — it's a **division of labour between human judgement and machine output**. This sprint you design that division, and the stakeholder plan around it. **Interview Emma (Managing Director), Tom (Customer Service) and David (CFO).**
 
 ---
 
@@ -13,7 +13,7 @@ A working AI system isn't a tool — it's a **division of labour between human j
 
 | Stakeholder | What they need / fear | How you'll manage them | Power × Interest |
 |---|---|---|---|
-| Emma (CEO / sponsor) | | | High / High |
+| Emma (Managing Director / sponsor) | | | High / High |
 | David (CFO) | | | |
 | Tom (CS / frontline) | | | |
 | _add others you met_ | | | |

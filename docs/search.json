@@ -277,7 +277,7 @@
     "href": "frameworks.html#the-trust-tool-when-to-trust-ai",
     "title": "Frameworks",
     "section": "The trust tool — when to trust AI",
-    "text": "The trust tool — when to trust AI\nThe core lens for the whole day: Average / Precise × Small / Large.\n\nAI excels at average answers over small, low-stakes work — lean in.\nIt gets dangerous on precise answers and large, high-stakes work — keep a human in the loop.\n\nThis is what makes “where does a human stay in the loop?” an answerable question rather than a vibe. It comes from the free companion book, Conversation, Not Delegation — start there to go deeper."
+    "text": "The trust tool — when to trust AI\nThe core lens for the whole day: Average / Precise × Small / Large.\n\nAI excels at average answers over small, low-stakes work — lean in.\nIt gets dangerous on precise answers and large, high-stakes work — keep a human in the loop.\n\nThis is what makes “where does a human stay in the loop?” an answerable question rather than a vibe. It comes from the free companion book, Conversation, Not Delegation — start there to go deeper.\n\n\n\nThe trust tool: a 2×2 of how exact the answer must be (average → precise) against stakes and scope (small → large)."
   },
   {
     "objectID": "frameworks.html#ddcd-leading-through-the-inevitable-crisis",
@@ -319,7 +319,7 @@
     "href": "index.html#the-question-you-came-to-answer",
     "title": "AI in Delivery",
     "section": "The question you came to answer",
-    "text": "The question you came to answer\n\nWhy is delivering an AI project different from delivering any other project?\n\nThat’s the spine of the day. The answer is five things every project manager assumes — that AI breaks:\n\n\n\n\n\n\n\n\nA normal project assumes…\nAI breaks it because…\nSo you must…\n\n\n\n\n“Done” is specifiable\noutput is non-deterministic and doesn’t reason\nmanage a distribution of behaviour, and define “good enough”\n\n\nA working demo ≈ nearly done\nthe demo-to-production gap is wide and deceptive\ntreat progress as illusory until it’s verified\n\n\nRequirements are the uncertainty\nthe data is, and it’s discovered, not specified\nrun delivery as organisational discovery\n\n\nQA is a phase\nverification is the product\ndesign where human judgement lives\n\n\nMore throughput = more value\ngeneric competence is now the baseline\nprotect the human variation a rival’s identical model can’t produce\n\n\n\nEvery PM tool you know still applies — but each one bends under these five forces. The day is about learning the bend."
+    "text": "The question you came to answer\n\nWhy is delivering an AI project different from delivering any other project?\n\nThat’s the spine of the day. The answer is five things every project manager assumes — that AI breaks:\n\n\n\nWhy AI delivery is different — for each of five things a normal project assumes, why AI breaks it, and the leadership move it forces.\n\n\nEvery PM tool you know still applies — but each one bends under these five forces. The day is about learning the bend."
   },
   {
     "objectID": "index.html#what-youll-leave-with",

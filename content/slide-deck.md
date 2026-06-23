@@ -166,11 +166,7 @@ A **delivery design for a real AI project**:
 
 # The five differences
 
-1. **"Done" can't be specified** → manage a distribution, define "good enough"
-2. **The demo is a trap** → progress is illusory
-3. **Data is discovered, not specified** → run it as organisational discovery
-4. **Verification is the product** → design where judgement lives
-5. **Generic is the baseline** → protect the human variation
+![](./images/five-differences-summary.png)
 
 **Every PM tool you know still applies — but each one bends under these five forces. Today you learn the bend.**
 
@@ -183,12 +179,7 @@ A **delivery design for a real AI project**:
 
 # A tool for the hardest call: when to trust AI
 
-<!-- NEW VISUAL NEEDED: 2x2 trust-tool matrix — axes: Average↔Precise (x), Small↔Large stakes/scope (y) -->
-
-**Average vs. Precise × Small vs. Large**
-
-- AI excels at **average** answers over **small**, low-stakes work.
-- It gets dangerous on **precise** answers and **large**, high-stakes work.
+![](./images/trust-tool-matrix.png)
 
 ::: {.notes}
 - This is the trust tool from *Conversation, Not Delegation* (the free companion resource for the whole series). It is the AI-specific lens that makes Difference 1 and Difference 4 actionable.

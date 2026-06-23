@@ -33,6 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -73,6 +74,14 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
+<meta property="og:title" content="AI in five minutes (for non-technical leaders) – AI in Delivery">
+<meta property="og:description" content="What a large language model actually is, in plain English — and why ‘confidently wrong’ is its default way of failing.">
+<meta property="og:image" content="https://michael-borck.github.io/ai-in-delivery/readings/content/images/og-image.png">
+<meta property="og:site_name" content="AI in Delivery">
+<meta name="twitter:title" content="AI in five minutes (for non-technical leaders) – AI in Delivery">
+<meta name="twitter:description" content="What a large language model actually is, in plain English — and why ‘confidently wrong’ is its default way of failing.">
+<meta name="twitter:image" content="https://michael-borck.github.io/ai-in-delivery/readings/content/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -247,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/michael-borck\.github\.io\/ai-in-delivery\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

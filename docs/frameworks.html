@@ -32,6 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./favicon.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -132,6 +133,14 @@ window.Quarto = {
 };
 </script>
 
+<meta property="og:title" content="Frameworks – AI in Delivery">
+<meta property="og:description" content="The tools you’ll keep using on Monday.">
+<meta property="og:image" content="https://michael-borck.github.io/ai-in-delivery/content/images/trust-tool-matrix.svg">
+<meta property="og:site_name" content="AI in Delivery">
+<meta name="twitter:title" content="Frameworks – AI in Delivery">
+<meta name="twitter:description" content="The tools you’ll keep using on Monday.">
+<meta name="twitter:image" content="https://michael-borck.github.io/ai-in-delivery/content/images/trust-tool-matrix.svg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -228,6 +237,12 @@ window.Quarto = {
 <li>It gets dangerous on <strong>precise</strong> answers and <strong>large</strong>, high-stakes work — keep a human in the loop.</li>
 </ul>
 <p>This is what makes “where does a human stay in the loop?” an answerable question rather than a vibe. It comes from the free companion book, <a href="https://michael-borck.github.io/conversation-not-delegation/"><em>Conversation, Not Delegation</em></a> — start there to go deeper.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="content/images/trust-tool-matrix.svg" class="img-fluid figure-img"></p>
+<figcaption>The trust tool: a 2×2 of how exact the answer must be (average → precise) against stakes and scope (small → large).</figcaption>
+</figure>
+</div>
 </section>
 <section id="ddcd-leading-through-the-inevitable-crisis" class="level2">
 <h2 class="anchored" data-anchor-id="ddcd-leading-through-the-inevitable-crisis">DDCD — leading through the inevitable crisis</h2>
@@ -354,7 +369,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/michael-borck\.github\.io\/ai-in-delivery\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

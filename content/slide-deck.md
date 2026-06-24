@@ -13,7 +13,12 @@ format:
 
 # Welcome
 
+::: {.content-visible when-format="html"}
+![](./images/opening-humans-ai-collaboration.webp)
+:::
+::: {.content-visible unless-format="html"}
 ![](./images/opening-humans-ai-collaboration.png)
+:::
 
 **AI in Delivery: Leading Projects That Ship**
 
@@ -74,7 +79,12 @@ A **delivery design for a real AI project**:
 
 # Why AI is different
 
+::: {.content-visible when-format="html"}
+![](./images/traditional-vs-ai-paths.webp)
+:::
+::: {.content-visible unless-format="html"}
 ![](./images/traditional-vs-ai-paths.png)
+:::
 
 **Five things every project manager assumes, that AI breaks.**
 
@@ -166,7 +176,12 @@ A **delivery design for a real AI project**:
 
 # The five differences
 
+::: {.content-visible when-format="html"}
+![](./images/five-differences-summary.webp)
+:::
+::: {.content-visible unless-format="html"}
 ![](./images/five-differences-summary.png)
+:::
 
 **Every PM tool you know still applies, but each one bends under these five forces. Today you learn the bend.**
 
@@ -179,7 +194,12 @@ A **delivery design for a real AI project**:
 
 # A tool for the hardest call: when to trust AI
 
+::: {.content-visible when-format="html"}
+![](./images/trust-tool-matrix.webp)
+:::
+::: {.content-visible unless-format="html"}
 ![](./images/trust-tool-matrix.png)
+:::
 
 ::: {.notes}
 - This is the trust tool from *Conversation, Not Delegation* (the free companion resource for the whole series). It is the AI-specific lens that makes Difference 1 and Difference 4 actionable.
@@ -222,7 +242,12 @@ A **delivery design for a real AI project**:
 
 # Sprint 1: Scope it against reality
 
+::: {.content-visible when-format="html"}
+![](./images/pilot-program.webp)
+:::
+::: {.content-visible unless-format="html"}
 ![](./images/pilot-program.png)
+:::
 
 **Interview Priya (Data) and Marcus (CIO). Reconcile "move fast" with "the data isn't ready."**
 
@@ -238,7 +263,12 @@ A **delivery design for a real AI project**:
 
 # Sprint 2: Stakeholders & human-in-the-loop
 
+::: {.content-visible when-format="html"}
+![](./images/speed-dating.webp)
+:::
+::: {.content-visible unless-format="html"}
 ![](./images/speed-dating.png)
+:::
 
 **Interview Emma (Managing Director), Tom (Customer Service), David (CFO). Decide where a human must stay in the loop.**
 
@@ -283,7 +313,12 @@ A **delivery design for a real AI project**:
 
 # Sprint 3: Roadmap, risk & the go/no-go call
 
+::: {.content-visible when-format="html"}
+![](./images/scale-pivot-kill-decision-tree.webp)
+:::
+::: {.content-visible unless-format="html"}
 ![](./images/scale-pivot-kill-decision-tree.png)
+:::
 
 **Build the roadmap. Then the staff push back, and a crisis hits. Defend your plan, or change it.**
 
@@ -326,7 +361,12 @@ A **delivery design for a real AI project**:
 
 # Your Action Plan
 
+::: {.content-visible when-format="html"}
+![](./images/action-plan-growth-trajectory.webp)
+:::
+::: {.content-visible unless-format="html"}
 ![](./images/action-plan-growth-trajectory.png)
+:::
 
 **This week:** one thing you'll do differently.
 **This month:** one thing you'll change.
@@ -340,7 +380,12 @@ A **delivery design for a real AI project**:
 
 ---
 
+::: {.content-visible when-format="html"}
+![](./images/QR-Code-Feedback.webp)
+:::
+::: {.content-visible unless-format="html"}
 ![](./images/QR-Code-Feedback.png)
+:::
 
 **Lead with humans in the loop. Protect the judgement only you bring.**
 

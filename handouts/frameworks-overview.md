@@ -18,7 +18,7 @@ When you've finished a pilot and need to decide what's next.
 
 **Time to decide:** 10-15 minutes
 
-[Read the full Scale/Pivot/Kill framework →](frameworks-scale-pivot-kill.md)
+[Read the full Scale/Pivot/Kill framework →](frameworks/frameworks-scale-pivot-kill.md)
 
 **Quick summary:**
 - **SCALE** if most criteria are met and there are no fundamental gaps
@@ -37,7 +37,7 @@ When something goes wrong and you need to lead your way through it.
 
 **Time to apply:** 30 minutes total (5 min diagnose, 5 min decide, 15 min communicate, 5 min document)
 
-[Read the full Crisis Response framework →](frameworks-crisis-response.md)
+[Read the full Crisis Response framework →](frameworks/frameworks-crisis-response.md)
 
 **Quick summary:**
 - **DIAGNOSE:** Understand the problem
@@ -56,8 +56,6 @@ Each shows how DDCD applies to different types of crises:
 
 Your AI system launches but suddenly gives customers wrong information due to corrupted training data. You have 30 minutes to decide.
 
-[Read Crisis #1 scenario →](crisis-1-data-quality.md)
-
 **Key lesson:** Technical crises need fast diagnosis and clear decisions. Data quality > model sophistication.
 
 ---
@@ -67,8 +65,6 @@ Your AI system launches but suddenly gives customers wrong information due to co
 
 Your star team member (with influence over others) actively discourages people from using the new AI system. You have 30 minutes to handle it.
 
-[Read Crisis #2 scenario →](crisis-2-team-resistance.md)
-
 **Key lesson:** Stated objections often mask real fears. Listening and involvement beat announcements. People leadership ≠ technical fixes.
 
 ---
@@ -77,8 +73,6 @@ Your star team member (with influence over others) actively discourages people f
 *When your boss wants faster than is safe*
 
 The CEO demands you expand the project 4 weeks faster than is realistic. You need to respond without just saying "no."
-
-[Read Crisis #3 scenario →](crisis-3-executive-pressure.md)
 
 **Key lesson:** Understanding leadership pressure leads to better proposals. Data + empathy > refusal.
 
@@ -155,9 +149,9 @@ If you want more detail on facilitation, evidence-gathering, or team conversatio
 
 ## Start Here
 
-- **Just finished a pilot?** → [Scale/Pivot/Kill](frameworks-scale-pivot-kill.md)
-- **In the middle of a crisis?** → [Crisis Response](frameworks-crisis-response.md)
-- **Want specific scenario examples?** → [Crisis scenarios](crisis-1-data-quality.md)
+- **Just finished a pilot?** → [Scale/Pivot/Kill](frameworks/frameworks-scale-pivot-kill.md)
+- **In the middle of a crisis?** → [Crisis Response](frameworks/frameworks-crisis-response.md)
+- **Want specific scenario examples?** → [Crisis scenarios](#three-crisis-scenarios)
 - **Need a quick reference?** → Print this page or any of the individual frameworks
 
 Good luck leading your projects.

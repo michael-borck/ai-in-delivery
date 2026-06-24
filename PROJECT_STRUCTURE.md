@@ -36,7 +36,11 @@ the RetailFlow document answer-key, crisis walkthroughs, feedback),
 
 ## Theming & front matter
 
-- Site theme: `_quarto.yml` → `theme: [cosmo, brand.scss]`.
+- Site theme: `_quarto.yml` → dual theme `light: [cosmo, brand.scss]` /
+  `dark: [darkly, brand.scss]`, with a reader-toggleable dark mode. All
+  visual tokens, the light navbar, hero, icon cards and dark overrides live in
+  `brand.scss`. Brand fonts (Fraunces display + Inter body) load via
+  `_includes/fonts.html` (`include-in-header`). The navbar logo is `favicon.svg`.
 - Listing pages (`before`, `workshop`, `frameworks`) pull `title` + `description`
   from each content file's YAML front matter; keep those fields when adding
   material.
@@ -45,6 +49,8 @@ the RetailFlow document answer-key, crisis walkthroughs, feedback),
 
 ```bash
 ./scripts/build-site.sh     # clean docs/, render website + deck, add .nojekyll
+# WebP copies of the deck images are generated from their PNGs (needs `cwebp`),
+# so the HTML deck stays small while PDF/PPTX keep the full-quality PNG.
 # then:
 git add -A && git commit -m "..." && git push   # Pages serves main /docs
 ```

@@ -1,0 +1,36 @@
+---
+title: "Frameworks"
+subtitle: "The tools you'll keep using on Monday."
+listing:
+  - id: handouts
+    contents: "handouts/frameworks/*.md"
+    type: default
+    fields: [title, description]
+    sort: "title"
+---
+
+These are durable, tool-agnostic frameworks: they work regardless of which AI model you're using or which one comes out next quarter.
+
+## The trust tool: when to trust AI
+
+The core lens for the whole day: **Average / Precise × Small / Large.**
+
+- AI excels at **average** answers over **small**, low-stakes work, so lean in.
+- It gets dangerous on **precise** answers and **large**, high-stakes work, so keep a human in the loop.
+
+This is what makes "where does a human stay in the loop?" an answerable question rather than a vibe. It comes from the free companion book, [*Conversation, Not Delegation*](https://michael-borck.github.io/conversation-not-delegation/). Start there to go deeper.
+
+![The trust tool: a 2×2 of how exact the answer must be (average → precise) against stakes and scope (small → large).](content/images/trust-tool-matrix.svg){fig-align="center"}
+
+## DDCD: leading through the inevitable crisis
+
+When an AI project hits trouble (and it will), work the problem: **Diagnose → Decide → Communicate → Document.** First ask whether it's a *technical*, *people*, *leadership*, or *ethical* crisis, as they need different responses.
+
+## Scale / Pivot / Kill: the go/no-go call
+
+At each gate, the honest question isn't "is it perfect?". It's whether the evidence justifies continuing. **Killing a project that isn't working, early, is success, not failure.** The cost of wrongly scaling is far higher than the cost of wrongly killing.
+
+## Take-home references
+
+::: {#handouts}
+:::

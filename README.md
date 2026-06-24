@@ -14,7 +14,8 @@ This repo holds the teaching materials **and** builds the companion website (Qua
 
 ```
 _quarto.yml            Quarto website config (type: website, output-dir: docs)
-brand.scss             Site theme
+brand.scss             Site theme — tokens, light navbar, hero, icon cards, dark mode
+_includes/fonts.html   Brand fonts (Fraunces + Inter), loaded site-wide
 index.qmd              Landing page (the five differences + what you leave with)
 before.qmd             Pre-readings landing (lists readings/)
 workshop.qmd           The three sprints + initiative cards (listings)

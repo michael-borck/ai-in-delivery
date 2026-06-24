@@ -1,0 +1,56 @@
+---
+title: "The masterclass series"
+subtitle: "Four independent one-day AI masterclasses. Take any one on its own, or build a pathway."
+toc: false
+---
+
+> **A common thread runs through all four:** when everyone has access to the same AI, the generic output it produces is the baseline, not the advantage. What lasts is **human judgement**: knowing where AI genuinely helps, where it quietly fails, and where your thinking must stay in charge.
+
+**AI in Delivery** is one of four one-day AI masterclasses in Curtin University's Executive Education program. Each stands completely on its own; together they cover the full arc of working with AI in an organisation: **using** it well, deciding **where to invest**, **delivering** projects that ship, and governing it **ethically**.
+
+::: {.callout-note}
+All four are searchable, with dates and enrolment, on the [Curtin Executive Education masterclasses page](https://www.curtin.edu.au/study/professional-development/executive-education/masterclasses/).
+:::
+
+::: {.cards}
+
+<div class="card-tile">
+<h3>① AI in Practice</h3>
+<p><em>Building Everyday Capability</em><br><br>
+<strong>"How do I use AI well (confidently, critically, and responsibly) in my own work?"</strong><br><br>
+For professionals at any level, no technical background needed. The skill is judgement, not tool use. Leave with a redesigned workflow and reusable decision tools.</p>
+</div>
+
+<div class="card-tile">
+<h3>② AI in Strategy</h3>
+<p><em>Choosing Where to Invest</em><br><br>
+<strong>"Which AI investment is worth real money, and which is a confident-sounding trap?"</strong><br><br>
+For executives, strategists and decision-makers. Leave with a scored, risk-assessed AI investment proposal ready to take to a sponsor.</p>
+</div>
+
+<div class="card-tile green">
+<h3>③ AI in Delivery <span style="font-weight:600">(you are here)</span></h3>
+<p><em>Leading Projects That Ship</em><br><br>
+<strong>"How do I deliver an AI project without the common, predictable failures?"</strong><br><br>
+For project managers and delivery leads. Leave with a delivery design: scope, roadmap with gates, stakeholder and human-in-the-loop plan, and a risk register.</p>
+</div>
+
+<div class="card-tile accent">
+<h3>④ Ethics of Artificial Intelligence</h3>
+<p><em>Predict, Prevent &amp; Manage the Risks</em><br><br>
+<strong>"How do I avoid the ethical missteps, negative outcomes and public scandals that AI can cause?"</strong><br><br>
+For anyone responsible for AI risk and governance. Informed by recent AI scandals and the field of AI ethics. Leave with a guidance toolkit and operational checklist customised to your own organisation.</p>
+</div>
+
+:::
+
+## How they fit together
+
+Each masterclass is a complete, standalone day. But they're designed to complement one another:
+
+- **AI in Practice** builds the individual fluency the others assume.
+- **AI in Strategy** decides *which* AI initiatives deserve investment.
+- **AI in Delivery** (this course) takes a funded initiative and *ships* it.
+- **Ethics of Artificial Intelligence** runs *across* all of them: the governance, risk and responsibility lens every AI initiative needs.
+
+[Browse all four & enrol → Curtin Executive Education](https://www.curtin.edu.au/study/professional-development/executive-education/masterclasses/){.btn .btn-primary target="_blank"}

@@ -19,8 +19,24 @@
 !content/
 !content/**
 
+# Quarto source: site config, theme, page sources, build scripts, brand assets
+!*.qmd
+!*.yml
+!*.scss
+!*.sh
+!*.html
+!*.svg
+!*.png
+!_includes/
+!_includes/**
+
 # Keep this .gitignore file tracked
 !.gitignore
 
 /.quarto/
 **/*.quarto_ipynb
+
+# macOS AppleDouble / Finder cruft (regenerated on external/APFS drives)
+._*
+**/._*
+.DS_Store
